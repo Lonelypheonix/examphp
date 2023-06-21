@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>  <title>Responsive Registaration Form</title></head>
+       
+    <body>
+        <h1>Student Registaration Form</h1>
+        <form class="srf" action="http://localhost/lonelypheonix/insertdb.php" method="post">
+        <br><br>Roll No:<input type="text" id="rollno" name="rollno" >
+        <br><br>Student Name:<input type="text" id="name" name="name" >
+        <br><br>Email:<input type="email" id="email" name="email" >
+        <br><br>Mobile:<input type="tel" id="mobile" name="mobile" >
+        <br><br>Gender:<input type="radio" id="male" name="gender" value="male"/>Male
+                        <input type="radio" id="female" name="gender" value="female"/>Female
+        <br><br>City:<input type="text" id="city" name="city" maxlength="10">
+        <br><br>State:<input type="text" id="state" name="state">
+        <br><br>Specialization:<br><br>
+                    <input type="checkbox" name="specialization" value="Computer Science">Computer Science<br/>
+                    <input type="checkbox" name="specialization" value="Information Technology">Information Technology<br/>
+                    <input type="checkbox" name="specialization" value="Computer Architecture">Computer Architecture<br/>
+                    <input type="checkbox" name="specialization" value="Tele Communication">Tele Communication<br/>
+        <br><br><input type="submit" value="Register" onclick="SaveStudentDetails()">
+        </form>
+        <button onclick="location.href = 'http:/\/localhost/lonelypheonix/insertdb.php';" id="myButton" class="float-left submit-button" >Home</button>
+    </body>
+</html>
+</body>
+</html>
